@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V88-VD-bxW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokedexToodoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yt0-LY-qft">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X1x-pO-lh0">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="Gug-Qt-Vb0">
+                                <rect key="frame" x="8" y="96" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="3Wu-EJ-hGt"/>
+                                    <constraint firstAttribute="height" constant="48" id="7Sv-oa-CPL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokédex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9K-K0-6Fq">
+                                <rect key="frame" x="72" y="101.5" width="124.5" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="Procurar" translatesAutoresizingMaskIntoConstraints="NO" id="NYO-sD-GZs">
+                                <rect key="frame" x="216" y="91" width="178" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NYO-sD-GZs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3fu-wh-xoG"/>
+                            <constraint firstItem="NYO-sD-GZs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="7Pm-bR-vN4"/>
+                            <constraint firstItem="Gug-Qt-Vb0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Vok-3u-xlH"/>
+                            <constraint firstItem="Yt0-LY-qft" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YUY-Uj-UbZ"/>
+                            <constraint firstItem="Yt0-LY-qft" firstAttribute="top" secondItem="Gug-Qt-Vb0" secondAttribute="bottom" id="aSG-Xz-uKb"/>
+                            <constraint firstItem="j9K-K0-6Fq" firstAttribute="leading" secondItem="Gug-Qt-Vb0" secondAttribute="trailing" constant="16" id="dwD-LX-d0D"/>
+                            <constraint firstItem="Yt0-LY-qft" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jJc-xL-FAN"/>
+                            <constraint firstItem="j9K-K0-6Fq" firstAttribute="centerY" secondItem="Gug-Qt-Vb0" secondAttribute="centerY" id="ksK-3Y-lH7"/>
+                            <constraint firstItem="Yt0-LY-qft" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uVU-HH-UFw"/>
+                            <constraint firstItem="NYO-sD-GZs" firstAttribute="leading" secondItem="j9K-K0-6Fq" secondAttribute="trailing" constant="19.5" id="wmO-EU-Xxn"/>
+                            <constraint firstItem="Gug-Qt-Vb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="yPP-6M-aAR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wF4-7z-LTh">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="Yt0-LY-qft" id="iZn-7p-PPk"/>
+                        <outlet property="searchBar" destination="NYO-sD-GZs" id="mVS-G8-Eyp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bY3-Xl-VN6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V88-VD-bxW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T0p-45-ere">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h7V-oZ-s3P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZe-nS-Fy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pokeball" width="206" height="208"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
